@@ -1,24 +1,35 @@
-<ion-content class="ion-padding">
+<ion-content>
 
-  <form class="form">
-    <!-- lines="none" -->
-    <ion-item >
-        <ion-input type="email" placeholder="Correo electronico"></ion-input>
-    </ion-item>
+  <div padding-top text-start>
+    <ion-button fill="clear" [routerLink]="'/home'" routerDirection="forward">
+        <ion-icon name="arrow-back"></ion-icon>Atras
+    </ion-button>
+  </div>
 
-    <ion-item >
-        <ion-input type="password" pattern="[0-9]*" inputmode="numeric" placeholder="Ingresa tu contraseña"></ion-input>
-    </ion-item>
+  <div class="ion-padding ion-text-center">
 
-    <ion-button class="ion-padding" expand="block" shape="round" type="submit" color="primary">Ingresar</ion-button>
-</form>
+    <form class="form">
+      <!-- lines="none" -->
+      <ion-item >
+          <ion-input type="email" placeholder="Correo electronico"></ion-input>
+      </ion-item>
+  
+      <ion-item >
+          <ion-input type="password" pattern="[0-9]*" inputmode="numeric" placeholder="Ingresa tu contraseña"></ion-input>
+      </ion-item>
+  
+      <ion-button class="ion-padding" expand="block" shape="round" type="submit" color="primary">Ingresar</ion-button>
+  </form>
+  
+  <ion-button color="primary" expand="block" fill="clear" routerDirection="forward">¿Olvidaste tu contraseña?</ion-button>
+  
+  <div class="cont-register">
+    <h6>¿No estas registrado?</h6>
+    <!-- <ion-text expand="block" fill="clear" routerDirection="forward" (click)="goRegisterPage()">¿No estas registrado?</ion-text> -->
+    <ion-button expand="block" fill="clear" routerDirection="forward">Registrate aqui</ion-button>
+  </div>
 
-<ion-button color="primary" expand="block" fill="clear" routerDirection="forward">¿Olvidaste tu contraseña?</ion-button>
-
-<div class="cont-register">
-  <h6>¿No estas registrado?</h6>
-  <!-- <ion-text expand="block" fill="clear" routerDirection="forward" (click)="goRegisterPage()">¿No estas registrado?</ion-text> -->
-  <ion-button expand="block" fill="clear" routerDirection="forward">Registrate aqui</ion-button>
-</div>
+  </div>
+  
 
 </ion-content>
