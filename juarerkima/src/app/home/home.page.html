@@ -1,9 +1,31 @@
 
-<ion-content class="ion-padding bg-home">
+<ion-content class="ion-padding">
+  <ion-text>
+    <h1>Bienvenido</h1>
+    <p>Get started by loggin into <br>your acount.</p>
+  </ion-text>
 
-  <div class="btns">
-    <ion-button mode="md" [routerLink]="'/login'" class="ion-padding" fill="clear" expand="block" shape="round" type="submit" color="light">Iniciar sesion</ion-button>
-    <ion-button mode="md" [routerLink]="'/register'" class="ion-padding" fill="clear" expand="block" shape="round" type="submit" color="light">Registrarse</ion-button>
+  <div class="actions">
+    <div class="login-buttons">
+      <ion-button>
+        <ion-avatar>
+          <img src="../../assets/facebook.png" alt="">
+        </ion-avatar>
+        <ion-label>Facebook</ion-label>
+      </ion-button>
+      <ion-button>
+        <ion-avatar>
+          <img src="../../assets/google.png" alt="">
+        </ion-avatar>
+        <ion-label>Google</ion-label>
+      </ion-button>
+    </div>
+    <div class="separator">
+      <span>or</span>
+      <span class="line left"></span>
+      <span class="line right"></span>
+    </div>
+    <ion-button class="signup-btn" expand="block" routerLink='/register'>Signup with email</ion-button>
+    <p class="login">¿Ya tienes cuenta? <a routerLink='/login'>Login now</a> </p>
   </div>
-
 </ion-content>
