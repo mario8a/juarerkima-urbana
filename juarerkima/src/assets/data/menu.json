@@ -1,0 +1,17 @@
+[
+    {
+        "icon": "flash",
+        "name": "Principal",
+        "redirectTo": "/principal"
+    },
+    {
+        "icon": "beaker",
+        "name": "Movimientos",
+        "redirectTo": "/movimientos"
+    },
+    {
+        "icon": "card",
+        "name": "Saldo",
+        "redirectTo": "/saldo"
+    }
+]
