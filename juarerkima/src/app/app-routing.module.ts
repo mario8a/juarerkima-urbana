@@ -13,8 +13,16 @@ const routes: Routes = [
     loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
   },
   {
-    path: 'rutas',
+    path: 'principal',
     loadChildren: () => import('./pages/rutas/rutas.module').then( m => m.RutasPageModule)
+  },
+  {
+    path: 'saldo',
+    loadChildren: () => import('./pages/saldo/saldo.module').then( m => m.SaldoPageModule)
+  },
+  {
+    path: 'movimientos',
+    loadChildren: () => import('./pages/movimientos/movimientos.module').then( m => m.MovimientosPageModule)
   },
 ];
 
